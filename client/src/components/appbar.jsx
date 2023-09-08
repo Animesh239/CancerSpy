@@ -21,7 +21,7 @@ import { createTheme } from "@mui/material/styles";
 const pages = ["Home", "About Us", "Cancer Pedia", "Medical", "Conatct Us"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const theme = createTheme({
+const theme = createTheme({  
   typography: {
     fontFamily: "Outfit",
   },
