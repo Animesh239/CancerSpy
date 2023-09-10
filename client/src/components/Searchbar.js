@@ -8,11 +8,11 @@ export default function Highlights() {
   return (
     <Autocomplete
       id="highlights-demo"
-      sx={{ width: 300 }}
+      sx={{ width: 500 }}
       options={cancerTypes}
       getOptionLabel={(option) => option}
       renderInput={(params) => (
-        <TextField {...params} label="Highlights" margin="normal" />
+        <TextField {...params} label="Study Your Cancer" margin="normal" />
       )}
       renderOption={(props, option, { inputValue }) => {
         const matches = match(option, inputValue, { insideWords: true });

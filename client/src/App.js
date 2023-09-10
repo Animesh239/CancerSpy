@@ -3,6 +3,11 @@ import "./App.css";
 import ResponsiveAppBar from "./components/appbar";
 import { Box } from "@mui/material";
 import Main from "./components/main";
+import AboutCancer from "./components/AbotCancer";
+import AboutUs from "./components/AboutUs";
+import Types from "./components/Types";
+
+
 
 
 const App = () => {
@@ -10,13 +15,18 @@ const App = () => {
     <>
       <Box
         sx={{
-          backgroundImage: "linear-gradient(90deg, #B2E1F3 22.05%, #1988A4 100%)",
+          backgroundImage:
+            "linear-gradient(90deg, #B2E1F3 22.05%, #1988A4 100%)",
           width: "100%", // Set the width to 100% if you want the gradient to cover the entire box
-          height: "100vh", // Set the height to fill the viewport, adjust as needed
+          height: "auto", // Set the height to fill the viewport, adjust as needed
+          
         }}
       >
         <ResponsiveAppBar />
-        <Main sx={{ height : '100vh' }} />
+        <Main />
+        <AboutCancer/>
+        <AboutUs/>
+        <Types/>
       </Box>
     </>
   );

@@ -44,7 +44,7 @@ const Bounce = styled("div")({
 const Main = () => {
   return (
     <>
-      <Grid container sx={{ height: "90%" }}>
+      <Grid container sx={{ height: "90vh" }}>
         <Grid item xs={6} sx={{ height: "100%" }}>
           <Item>
             <Typography
