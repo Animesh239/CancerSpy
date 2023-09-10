@@ -3,28 +3,30 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
-import Logo from "../assets/Logo.svg";
-import logoIMG from "../assets/logoIMG.svg";
+import imgLogo from "../assets/img1.svg";
+// import logoIMG from "../assets/logoIMG.svg";
 import Grid from "@mui/material/Grid";
+import '../App.css'
 
 const pages = ["Home", "About Us", "Cancer Pedia", "Medical", "Conatct Us"];
 
 function ResponsiveAppBar() {
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ zIndex: '2' }}>
       <Container
         maxWidth="2xl"
         sx={{
-          bgcolor: " #1988A4",
+          bgcolor: "#349899",
+          // mixBlendMode: 'overlay',
           display: "flex",
           justifyContent: "space-around",
         }}
       >
         <Toolbar disableGutters>
           <Box disableGutters sx={{ display: { xs: "none", md: "flex" } }}>
-            <img src={logoIMG} sx={{ mr: 1 }} />
+            {/* <img src={logoIMG} sx={{ mr: 1 }} /> */}
             <img
-              src={Logo}
+              src={imgLogo}
               component="a"
               href="/"
               sx={{
@@ -38,7 +40,7 @@ function ResponsiveAppBar() {
           {pages.map((page) => (
             <Grid
               item
-              xs={1.5}
+              xs={2}
               sx={{
                 display: "flex",
                 justifyContent: "center",
